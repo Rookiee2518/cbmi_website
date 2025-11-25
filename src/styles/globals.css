@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+@theme {
+  /* CrystalBall Design Tokens */
+  --color-cb-blue: #0d1b2a;
+  --color-cb-blue-hover: #1b263b;
+  --color-divider: #e9ecef;
+  
+  /* Border Radius */
+  --radius-sm: 6px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-white text-gray-700;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'SF Pro Display', sans-serif;
+    font-weight: 300;
+    letter-spacing: 0.02em;
+  }
+
+  h1 {
+    @apply text-cb-blue;
+    font-weight: 300;
+    letter-spacing: 0.04em;
+  }
+
+  h2 {
+    @apply text-cb-blue;
+    font-weight: 300;
+    letter-spacing: 0.03em;
+  }
+
+  h3 {
+    @apply text-cb-blue;
+    font-weight: 300;
+    letter-spacing: 0.02em;
+  }
+
+  p {
+    @apply text-gray-600;
+    font-weight: 300;
+  }
+}
