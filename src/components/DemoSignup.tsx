@@ -28,7 +28,7 @@ export function DemoSignup() {
   };
 
   return (
-    <div className="bg-white min-h-[80vh] py-32 px-12">
+    <div className="bg-white min-h-[80vh] py-16 lg:py-32 px-4 lg:px-12">
       <div className="max-w-[600px] mx-auto">
         <AnimatePresence mode="wait">
           {step === 'form' && (
@@ -39,10 +39,10 @@ export function DemoSignup() {
               exit={{ opacity: 0, y: -20 }}
               transition={{ duration: 0.4 }}
             >
-              <h1 className="text-5xl text-center mb-8 tracking-wider">
+              <h1 className="text-3xl lg:text-5xl text-center mb-8 tracking-wider">
                 Request a Demo
               </h1>
-              <p className="text-center text-gray-500 mb-12">
+              <p className="text-center text-sm lg:text-base text-gray-500 mb-12">
                 Experience CrystalBall's intelligence firsthand
               </p>
 
@@ -114,10 +114,10 @@ export function DemoSignup() {
               transition={{ duration: 0.4 }}
               className="text-center"
             >
-              <h1 className="text-5xl mb-8 tracking-wider">
+              <h1 className="text-3xl lg:text-5xl mb-8 tracking-wider">
                 Confirm Your Details
               </h1>
-              <p className="text-gray-500 mb-12">
+              <p className="text-sm lg:text-base text-gray-500 mb-12">
                 Please review your information before proceeding
               </p>
 
@@ -160,10 +160,10 @@ export function DemoSignup() {
               transition={{ duration: 0.4 }}
               className="text-center"
             >
-              <h1 className="text-5xl mb-8 tracking-wider">
+              <h1 className="text-3xl lg:text-5xl mb-8 tracking-wider">
                 Start Your Trial
               </h1>
-              <p className="text-gray-500 mb-12">
+              <p className="text-sm lg:text-base text-gray-500 mb-12">
                 Get instant access to CrystalBall for 14 days
               </p>
 
@@ -227,10 +227,10 @@ export function DemoSignup() {
                 <CheckCircle2 className="w-20 h-20 text-[#0D1B2A] stroke-[1px] mx-auto" />
               </motion.div>
 
-              <h1 className="text-5xl mb-6 tracking-wider">
+              <h1 className="text-3xl lg:text-5xl mb-6 tracking-wider">
                 You're All Set
               </h1>
-              <p className="text-xl text-gray-500 mb-12 max-w-md mx-auto">
+              <p className="text-base lg:text-xl text-gray-500 mb-12 max-w-md mx-auto">
                 Check your email for login credentials and next steps. Our team will reach out within 24 hours.
               </p>
 

@@ -23,16 +23,16 @@ export function SupportPage() {
   return (
     <div className="bg-white">
       {/* Hero Section */}
-      <section className="py-32 px-12">
+      <section className="py-16 lg:py-32 px-4 lg:px-12">
         <div className="max-w-[1440px] mx-auto text-center">
           <AnimatedSection>
-            <h1 className="text-6xl mb-6 tracking-wider">
+            <h1 className="text-3xl lg:text-6xl mb-6 tracking-wider">
               We're Here to Help
             </h1>
           </AnimatedSection>
           
           <AnimatedSection delay={0.2}>
-            <p className="text-xl text-gray-500">
+            <p className="text-base lg:text-xl text-gray-500">
               Expert support when you need it most
             </p>
           </AnimatedSection>
@@ -43,9 +43,9 @@ export function SupportPage() {
       <div className="border-t border-[#E9ECEF]" />
 
       {/* Support Options */}
-      <section className="py-32 px-12">
+      <section className="py-16 lg:py-32 px-4 lg:px-12">
         <div className="max-w-[1440px] mx-auto">
-          <div className="grid grid-cols-2 gap-8 mb-20">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8 mb-12 lg:mb-20">
             <AnimatedSection delay={0}>
               <div className="p-12 bg-white border border-[#E9ECEF] rounded-[6px] hover:shadow-lg transition-all duration-300">
                 <Mail className="w-8 h-8 text-[#0D1B2A] mb-6 stroke-[1px]" />
@@ -108,10 +108,10 @@ export function SupportPage() {
       <div className="border-t border-[#E9ECEF]" />
 
       {/* Ticket Form */}
-      <section className="py-32 px-12">
+      <section className="py-16 lg:py-32 px-4 lg:px-12">
         <div className="max-w-[800px] mx-auto">
           <AnimatedSection>
-            <h2 className="text-4xl text-center mb-12 tracking-wide">
+            <h2 className="text-2xl lg:text-4xl text-center mb-12 tracking-wide">
               Raise a Support Ticket
             </h2>
           </AnimatedSection>
@@ -132,7 +132,7 @@ export function SupportPage() {
                     />
                   </div>
 
-                  <div className="grid grid-cols-2 gap-6">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                     <div>
                       <label className="block text-gray-600 mb-2">Category</label>
                       <select
@@ -206,12 +206,12 @@ export function SupportPage() {
       <div className="border-t border-[#E9ECEF]" />
 
       {/* Support Hours */}
-      <section className="py-24 px-12">
+      <section className="py-16 lg:py-24 px-4 lg:px-12">
         <div className="max-w-[1440px] mx-auto">
           <AnimatedSection>
-            <div className="bg-white border border-[#E9ECEF] rounded-[6px] p-12 text-center">
-              <h3 className="text-2xl mb-6 text-[#0D1B2A]">Support Hours</h3>
-              <div className="grid grid-cols-3 gap-8">
+            <div className="bg-white border border-[#E9ECEF] rounded-[6px] p-8 lg:p-12 text-center">
+              <h3 className="text-xl lg:text-2xl mb-6 text-[#0D1B2A]">Support Hours</h3>
+              <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-8">
                 <div>
                   <div className="text-gray-400 mb-2">Email & Tickets</div>
                   <div className="text-[#0D1B2A]">24/7 Response</div>
