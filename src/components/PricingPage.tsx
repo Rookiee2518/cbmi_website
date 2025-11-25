@@ -57,16 +57,16 @@ export function PricingPage() {
   return (
     <div className="bg-white">
       {/* Hero Section */}
-      <section className="py-16 lg:py-32 px-4 lg:px-12">
+      <section className="py-32 px-12">
         <div className="max-w-[1440px] mx-auto text-center">
           <AnimatedSection>
-            <h1 className="text-3xl lg:text-6xl mb-6 tracking-wider">
+            <h1 className="text-6xl mb-6 tracking-wider">
               Transparent Pricing for Every Scale
             </h1>
           </AnimatedSection>
           
           <AnimatedSection delay={0.2}>
-            <p className="text-base lg:text-xl text-gray-500">
+            <p className="text-xl text-gray-500">
               From single sites to enterprise fleets — pay for what you need
             </p>
           </AnimatedSection>
@@ -83,30 +83,30 @@ export function PricingPage() {
       <div className="border-t border-[#E9ECEF]" />
 
       {/* Pricing Cards */}
-      <section className="py-16 lg:py-32 px-4 lg:px-12 bg-gradient-to-b from-white to-gray-50">
+      <section className="py-32 px-12 bg-gradient-to-b from-white to-gray-50">
         <div className="max-w-[1440px] mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-8">
+          <div className="grid grid-cols-3 gap-8">
             {plans.map((plan, index) => (
               <AnimatedSection key={index} delay={index * 0.1}>
                 <div 
-                  className={`p-8 lg:p-12 bg-white border rounded-[8px] hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 relative ${
+                  className={`p-12 bg-white border rounded-[8px] hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 relative ${
                     plan.recommended 
-                      ? 'border-[#0D1B2A] shadow-xl lg:scale-105' 
+                      ? 'border-[#0D1B2A] shadow-xl scale-105' 
                       : 'border-[#E9ECEF]'
                   }`}
                 >
                   {plan.recommended && (
-                    <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-[#0D1B2A] text-white px-6 py-1 rounded-[6px] text-xs lg:text-sm">
+                    <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-[#0D1B2A] text-white px-6 py-1 rounded-[6px]">
                       Recommended
                     </div>
                   )}
 
-                  <h3 className="text-xl lg:text-2xl mb-4 text-[#0D1B2A]">{plan.name}</h3>
-                  <p className="text-sm lg:text-base text-gray-500 mb-8">{plan.description}</p>
+                  <h3 className="text-2xl mb-4 text-[#0D1B2A]">{plan.name}</h3>
+                  <p className="text-gray-500 mb-8">{plan.description}</p>
                   
                   <div className="mb-8">
-                    <span className="text-3xl lg:text-5xl text-[#0D1B2A]">{plan.price}</span>
-                    <span className="text-gray-400 ml-2 text-sm lg:text-base">/ {plan.period}</span>
+                    <span className="text-5xl text-[#0D1B2A]">{plan.price}</span>
+                    <span className="text-gray-400 ml-2">/ {plan.period}</span>
                   </div>
 
                   <ul className="space-y-4 mb-10">
@@ -139,10 +139,10 @@ export function PricingPage() {
       <div className="border-t border-[#E9ECEF]" />
 
       {/* Additional Info */}
-      <section className="py-16 lg:py-24 px-4 lg:px-12">
+      <section className="py-24 px-12">
         <div className="max-w-[1440px] mx-auto">
           <AnimatedSection>
-            <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-12">
+            <div className="grid grid-cols-3 gap-12">
               <div className="text-center">
                 <h3 className="text-xl mb-4 text-[#0D1B2A]">No Setup Fees</h3>
                 <p className="text-gray-500">
@@ -170,18 +170,18 @@ export function PricingPage() {
       <div className="border-t border-[#E9ECEF]" />
 
       {/* CTA Section */}
-      <section className="py-16 lg:py-24 px-4 lg:px-12 bg-[#0D1B2A]">
+      <section className="py-24 px-12 bg-[#0D1B2A]">
         <div className="max-w-[1440px] mx-auto text-center">
           <AnimatedSection>
-            <h2 className="text-2xl lg:text-4xl text-white mb-4 tracking-wide">
+            <h2 className="text-4xl text-white mb-4 tracking-wide">
               Need a Custom Solution?
             </h2>
-            <p className="text-sm lg:text-base text-white/80 mb-8">
+            <p className="text-white/80 mb-8">
               Talk to our team about enterprise pricing and custom deployments
             </p>
             <Link
               to="/demo"
-              className="inline-block w-full sm:w-auto px-10 py-4 rounded-[6px] bg-white text-[#0D1B2A] hover:bg-[#E9ECEF] transition-all duration-300 text-center"
+              className="inline-block px-10 py-4 rounded-[6px] bg-white text-[#0D1B2A] hover:bg-[#E9ECEF] transition-all duration-300"
             >
               Contact Sales
             </Link>
