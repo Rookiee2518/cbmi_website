@@ -6,16 +6,16 @@ export function RenewalPage() {
   return (
     <div className="bg-white">
       {/* Hero Section */}
-      <section className="py-32 px-12">
+      <section className="py-16 sm:py-24 lg:py-32 px-4 sm:px-6 lg:px-12">
         <div className="max-w-[1440px] mx-auto text-center">
           <AnimatedSection>
-            <h1 className="text-6xl mb-6 tracking-wider">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl mb-4 lg:mb-6 tracking-wider">
               License Renewal
             </h1>
           </AnimatedSection>
           
           <AnimatedSection delay={0.2}>
-            <p className="text-xl text-gray-500">
+            <p className="text-base sm:text-lg lg:text-xl text-gray-500">
               Continue your CrystalBall journey without interruption
             </p>
           </AnimatedSection>
@@ -26,9 +26,9 @@ export function RenewalPage() {
       <div className="border-t border-[#E9ECEF]" />
 
       {/* Renewal Options */}
-      <section className="py-32 px-12">
+      <section className="py-16 sm:py-24 lg:py-32 px-4 sm:px-6 lg:px-12">
         <div className="max-w-[1440px] mx-auto">
-          <div className="grid grid-cols-3 gap-8 mb-20">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 mb-12 lg:mb-20">
             <AnimatedSection delay={0}>
               <div className="p-12 bg-white border border-[#E9ECEF] rounded-[6px] hover:shadow-lg transition-all duration-300">
                 <Calendar className="w-8 h-8 text-[#0D1B2A] mb-6 stroke-[1px]" />
@@ -75,10 +75,10 @@ export function RenewalPage() {
       <div className="border-t border-[#E9ECEF]" />
 
       {/* Current License Status */}
-      <section className="py-32 px-12">
+      <section className="py-16 sm:py-24 lg:py-32 px-4 sm:px-6 lg:px-12">
         <div className="max-w-[800px] mx-auto">
           <AnimatedSection>
-            <h2 className="text-4xl text-center mb-12 tracking-wide">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl text-center mb-8 lg:mb-12 tracking-wide">
               Your License Status
             </h2>
           </AnimatedSection>
@@ -86,42 +86,42 @@ export function RenewalPage() {
           <AnimatedSection delay={0.2}>
             <div className="bg-white border border-[#E9ECEF] rounded-[6px] p-12">
               <div className="space-y-6">
-                <div className="flex justify-between items-center pb-6 border-b border-[#E9ECEF]">
+                <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center pb-6 border-b border-[#E9ECEF] gap-4">
                   <div>
-                    <div className="text-gray-400 mb-1">Current Plan</div>
-                    <div className="text-2xl text-[#0D1B2A]">Professional</div>
+                    <div className="text-gray-400 mb-1 text-sm lg:text-base">Current Plan</div>
+                    <div className="text-xl lg:text-2xl text-[#0D1B2A]">Professional</div>
                   </div>
-                  <div className="px-6 py-2 bg-green-50 text-green-700 rounded-[6px]">
+                  <div className="px-4 lg:px-6 py-2 bg-green-50 text-green-700 rounded-[6px] text-sm lg:text-base">
                     Active
                   </div>
                 </div>
 
-                <div className="flex justify-between items-center pb-6 border-b border-[#E9ECEF]">
+                <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center pb-6 border-b border-[#E9ECEF] gap-4">
                   <div>
-                    <div className="text-gray-400 mb-1">Renewal Date</div>
-                    <div className="text-xl text-[#0D1B2A]">December 15, 2025</div>
+                    <div className="text-gray-400 mb-1 text-sm lg:text-base">Renewal Date</div>
+                    <div className="text-lg lg:text-xl text-[#0D1B2A]">December 15, 2025</div>
                   </div>
-                  <div className="text-gray-500">
+                  <div className="text-sm lg:text-base text-gray-500">
                     38 days remaining
                   </div>
                 </div>
 
-                <div className="flex justify-between items-center pb-6 border-b border-[#E9ECEF]">
+                <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center pb-6 border-b border-[#E9ECEF] gap-4">
                   <div>
-                    <div className="text-gray-400 mb-1">Monthly Cost</div>
-                    <div className="text-xl text-[#0D1B2A]">$6,500</div>
+                    <div className="text-gray-400 mb-1 text-sm lg:text-base">Monthly Cost</div>
+                    <div className="text-lg lg:text-xl text-[#0D1B2A]">$6,500</div>
                   </div>
-                  <div className="text-gray-500">
+                  <div className="text-sm lg:text-base text-gray-500">
                     Billed monthly
                   </div>
                 </div>
 
-                <div className="flex justify-between items-center">
+                <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
                   <div>
-                    <div className="text-gray-400 mb-1">Auto-Renewal</div>
-                    <div className="text-xl text-[#0D1B2A]">Enabled</div>
+                    <div className="text-gray-400 mb-1 text-sm lg:text-base">Auto-Renewal</div>
+                    <div className="text-lg lg:text-xl text-[#0D1B2A]">Enabled</div>
                   </div>
-                  <button className="text-gray-500 hover:text-[#0D1B2A] transition-colors duration-300">
+                  <button className="text-sm lg:text-base text-gray-500 hover:text-[#0D1B2A] transition-colors duration-300">
                     Disable
                   </button>
                 </div>
@@ -135,13 +135,13 @@ export function RenewalPage() {
       <div className="border-t border-[#E9ECEF]" />
 
       {/* Renewal Actions */}
-      <section className="py-32 px-12">
+      <section className="py-16 sm:py-24 lg:py-32 px-4 sm:px-6 lg:px-12">
         <div className="max-w-[800px] mx-auto">
           <AnimatedSection>
-            <div className="grid grid-cols-2 gap-8">
-              <div className="bg-white border border-[#E9ECEF] rounded-[6px] p-10 text-center hover:shadow-lg transition-all duration-300">
-                <h3 className="text-2xl mb-4 text-[#0D1B2A]">Renew Now</h3>
-                <p className="text-gray-500 mb-6">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8">
+              <div className="bg-white border border-[#E9ECEF] rounded-[6px] p-8 lg:p-10 text-center hover:shadow-lg transition-all duration-300">
+                <h3 className="text-xl lg:text-2xl mb-3 lg:mb-4 text-[#0D1B2A]">Renew Now</h3>
+                <p className="text-sm lg:text-base text-gray-500 mb-6">
                   Extend your license immediately
                 </p>
                 <button className="w-full px-6 py-3 rounded-[6px] bg-[#0D1B2A] text-white hover:bg-[#495057] transition-all duration-300">
@@ -149,9 +149,9 @@ export function RenewalPage() {
                 </button>
               </div>
 
-              <div className="bg-white border border-[#E9ECEF] rounded-[6px] p-10 text-center hover:shadow-lg transition-all duration-300">
-                <h3 className="text-2xl mb-4 text-[#0D1B2A]">Upgrade Plan</h3>
-                <p className="text-gray-500 mb-6">
+              <div className="bg-white border border-[#E9ECEF] rounded-[6px] p-8 lg:p-10 text-center hover:shadow-lg transition-all duration-300">
+                <h3 className="text-xl lg:text-2xl mb-3 lg:mb-4 text-[#0D1B2A]">Upgrade Plan</h3>
+                <p className="text-sm lg:text-base text-gray-500 mb-6">
                   Access more features and sites
                 </p>
                 <Link
@@ -170,18 +170,18 @@ export function RenewalPage() {
       <div className="border-t border-[#E9ECEF]" />
 
       {/* Support Section */}
-      <section className="py-24 px-12 bg-[#F8F9FA]">
+      <section className="py-16 sm:py-20 lg:py-24 px-4 sm:px-6 lg:px-12 bg-[#F8F9FA]">
         <div className="max-w-[1440px] mx-auto text-center">
           <AnimatedSection>
-            <h2 className="text-3xl mb-6 tracking-wide">
+            <h2 className="text-2xl sm:text-3xl mb-4 lg:mb-6 tracking-wide">
               Need Help with Renewal?
             </h2>
-            <p className="text-gray-500 mb-8">
+            <p className="text-sm lg:text-base text-gray-500 mb-6 lg:mb-8">
               Our team is here to assist with any questions about your license
             </p>
             <Link
               to="/support"
-              className="inline-block px-10 py-4 rounded-[6px] bg-[#0D1B2A] text-white hover:bg-[#495057] transition-all duration-300"
+              className="inline-block w-full sm:w-auto px-8 sm:px-10 py-3 sm:py-4 rounded-[6px] bg-[#0D1B2A] text-white hover:bg-[#495057] transition-all duration-300 text-center"
             >
               Contact Support
             </Link>
